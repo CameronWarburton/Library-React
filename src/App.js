@@ -11,15 +11,15 @@ import BookInfo from './pages/BookInfo';
 function App() {
   return (
     <Router>
-      <Routes>
     <div className='App'>
       <Nav />
-      <Route path="/" element={Home}/>
-      <Route path="/books" element={() => <Books books={books} />} />
-      <Route path="/books/1" element={() => <BookInfo books={books} />} />
+      <Routes>
+      <Route path="/" element={<Home />}/>
+      <Route path="/books" element={<Books books={books} />} />
+      <Route path="/books/1" element={<BookInfo books={books} />} />
+      </Routes>
       <Footer />
     </div>
-      </Routes>
     </Router>
   );
 }
