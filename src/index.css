@@ -230,6 +230,7 @@ LANDING
 
 header {
   height: calc(100vh - 80px);
+  padding-top: 90px;
 }
 
 .header__container {
